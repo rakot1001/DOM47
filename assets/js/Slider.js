@@ -1,29 +1,29 @@
 class Slider {
-  constructor(images, _currentIndex = 0) {
+  constructor(images, currentIndex = 0) {
     this._images = images;
-    this._currentIndex = currenIndex;
+    this._currentIndex = currentIndex;
   }
   get images() {
     return this._images;
   }
-
-  get currenIndex() {
+  get currentIndex() {
     return this._currentIndex;
   }
-  set currenIndex(v) {
-    if (v !== "number") {
+  set currentIndex(v) {
+    if (typeof v !== 'number') {
       throw new TypeError();
     }
+    this._currentIndex = v;
+  }
+  get currentSlide() {
+    return this._images[this.currentIndex];
   }
 
-  get currentSlide() {
-    return this._images[this._currentIndex];
-  }
   next() {
-    return this._currentIndex + 1;
+    return (this._currentIndex + 1) % this._images.length;
   }
 
   prev() {
-    return this._currentIndex - 1;
+    return (this._currentIndex - 1 + this._images.length) % this._images.length;
   }
 }
