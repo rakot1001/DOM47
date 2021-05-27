@@ -1,22 +1,18 @@
 "use strict";
 
-const [firstBtn] = document.getElementsByTagName("button");
+const imagesDB = [
+  "https://a-static.besthdwallpaper.com/code-geass-lelouch-lamperouge-cc-oboi-3840x2160-20520_54.jpg",
+  "https://ae01.alicdn.com/kf/HTB1FWCnsb5YBuNjSspoq6zeNFXat/Code-Geass-Lelouch-vi-Britannia-Cosplay-Wig-Free-Shipping-for-Halloween-and-Christmas.jpg_Q90.jpg_.webp",
+  "https://images.saymedia-content.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc0MjkxOTQyOTA0MjQ0MDky/anime-movie-review-code-geass-lelouch-of-the-rebellion-movie-ii-transgression-2018.jpg",
+  "https://www.lunartoystore.com/media/catalog/product/cache/647a08bbdfbc103d8f5ac6fb916961ec/l/_/l.l._c.c.2.jpg",
+];
 
-function alertWithMessage() {
-  alert("Congratulations!");
-}
+const slider = new Slider(imagesDB);
 
-firstBtn.addEventListener("click", alertWithMessage);
-/////
-const p = document.getElementById("unique");
-/////
-const test = document.getElementsByClassName("test");
-/////////
+const image = document.querySelector(".slide");
 
-const par = document.querySelector("article > p"); // Возвращает один элемент
-const pars = document.querySelectorAll("p");
-const parss = document.getElementsByTagName("p");
+const [prevBtn, nextBtn] = document.querySelectorAll(
+  ".slider-container > button"
+);
 
-const h1 = document.querySelector("main > section > h1");
-const img = document.querySelector("section > article > img");
-const span = document.querySelectorAll("span");
+function pdateView() {}
