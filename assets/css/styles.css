@@ -1,5 +1,10 @@
-.slide{
-  width: 200px;
-  height:200px;
+.slide {
+  width: 400px;
+  height: 300px;
   object-fit: cover;
+}
+
+.slider-container{
+  display:flex;
+  /* flex-direction: column; */
 }
