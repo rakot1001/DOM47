@@ -17,12 +17,12 @@ const [prevBtn, nextBtn] = document.querySelectorAll(
 );
 
 prevBtn.addEventListener("click", () => {
-  slider.currentIndex = slider.prev();
+  slider.currentIndex = slider.prevSlide;
   updateView();
 });
 
 nextBtn.addEventListener("click", () => {
-  slider.currentIndex = slider.next();
+  slider.currentIndex = slider.nextSlide;
   updateView();
 });
 
