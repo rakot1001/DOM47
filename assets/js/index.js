@@ -15,4 +15,8 @@ const test = document.getElementsByClassName("test");
 
 const par = document.querySelector("article > p"); // Возвращает один элемент
 const pars = document.querySelectorAll("p");
-const pars = document.getElementsByTagName("p");
+const parss = document.getElementsByTagName("p");
+
+const h1 = document.querySelector("main > section > h1");
+const img = document.querySelector("section > article > img");
+const span = document.querySelectorAll("span");
